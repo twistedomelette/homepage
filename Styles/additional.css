@@ -1,0 +1,63 @@
+.item {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 160px 120px 1fr minmax(150px, auto) minmax(150px, auto);
+    grid-template-areas:
+            'h h'
+            'p p'
+            'i i'
+            'a a'
+            'e d'
+            'l .';
+    background-color: #f5f5dc;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    grid-area: h;
+}
+
+.personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 40px);
+    max-height: 120px;
+    grid-area: p;
+}
+
+.head {
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.introduction {
+    grid-area: i;
+}
+.achievements {
+    grid-area: a;
+}
+.experience {
+    grid-area: e;
+}
+.education {
+    grid-area: d;
+}
+.languages {
+    grid-area: l;
+}
+
+p {
+    text-indent: 20px;
+}
+
+.facts {
+    margin-left: 50px;
+    max-width: 400px;
+}
