@@ -13,7 +13,7 @@
             'i i'
             'a a'
             'e d'
-            'l .';
+            'l s';
     background-color: #f5f5dc;
 }
 
@@ -51,6 +51,9 @@
 }
 .languages {
     grid-area: l;
+}
+.skill {
+    grid-area: s;
 }
 
 p {
